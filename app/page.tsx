@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 
 interface Product {
   id: number;
@@ -88,7 +89,7 @@ export default function Page() {
       <div className="flex flex-col items-center py-8 gap-4">
         <h1 className="text-4xl font-bold">Cache Test</h1>
         <p className="text-gray-400 text-center max-w-md">
-          Fetches all characters from Rick and Morty API
+          Fetches all characters from <Link className="text-blue-500 hover:underline" href="https://rickandmortyapi.com/">Rick and Morty API</Link>
           <br />
           Cached for 10 seconds
           <br />
